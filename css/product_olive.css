@@ -1,0 +1,127 @@
+.badge {
+  display: none;
+}
+
+.all-prd_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----제목 배너 start---- */
+
+.all-prd_list h2 {
+  padding: 200px 0 100px;
+  width: 100%;
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%),
+    url('../img/prd-bg_01.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.all-prd_list h2 * {
+  display: block;
+  text-align: center;
+  font-family: 'paybooc-ExtraBold';
+  font-size: 1.25rem;
+}
+
+.all-prd_list h2 strong {
+  font-size: 3rem;
+  padding: 1rem;
+  color: var(--point-color);
+  text-shadow: var(--box-shadow);
+}
+
+.all-prd_list h2 *:last-child {
+  font-family: 'Marck Script', cursive;
+}
+
+/* ----제목 banner end---- */
+
+/* prd-con start */
+.prd-con {
+  width: 100%;
+  padding: 50px 0;
+  border: 1px solid red;
+}
+
+.menu-list,
+.prd-menu_list {
+  display: flex;
+  justify-content: end;
+}
+
+.menu-list {
+  padding-bottom: 50px;
+  font-size: 0.75rem;
+  color: var(--font-color-softly);
+  position: relative;
+}
+
+.menu-list::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom : 25px;
+  background-color: var(--font-color);
+}
+
+.menu-list li:not(:last-child) {
+  padding-right: 1rem;
+}
+
+.menu-list li:not(:last-child)::after {
+  content: ">";
+  position: absolute;
+  right : 0.25rem;
+  top : 0;
+}
+
+.prd-menu_list {
+  position: relative;
+}
+
+.prd-menu_list::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--lightgray-color);
+  bottom: 25px;
+}
+
+.prd-menu_list li {
+  transition: .3s;
+  margin-bottom: 50px;
+}
+
+.menu-list li:not(:last-child),
+.prd-menu_list li:not(:last-child) {
+  cursor: pointer;
+  position: relative;
+}
+
+.prd-menu_list li:not(:last-child) {
+  padding-right: 2rem;
+}
+
+.prd-menu_list li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--font-color-most-softly);
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prd-menu_list li:hover {
+  font-weight: bold;
+  color: var(--point-color);
+}
+
+/* prd-con end */

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaluteYooMo-Renual_main-index</title>
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" href="./css/main_index.css">
+
+  <!-- font awesome 구동문--> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- jquery 구동문 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- lodash 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- gsap 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"
+    integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ScrollMagic 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="./js/common.js"></script>
+  <script src="./js/header.js"></script>
+</head>
+
+<body>
+  <div class="mobile-wrap">
+    <header>
+      <div class="btn_ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1 class="logo">
+        <a href="main_index.html"><img src="./img/logo.svg" alt="logo" /></a>
+      </h1>
+      <div class="nav_bg"></div>
+      <div class="main-nav">
+        <a class="mobile_logo" href="main_index.html"><img src="./img/logo.svg" alt="logo" /></a>
+        <div class="mobile_private-nav">
+          <span><a href="login.html">로그인</a>이 필요합니다.</span>
+          <div class="mobile_icon-set">
+            <a href="login.html">
+              <i class="fa-solid fa-user"></i>
+              <span>마이페이지</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-truck"></i>
+              <span>주문조회</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span>장바구니</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-circle-question"></i>
+              <span>고객센터</span>
+            </a>
+          </div>
+        </div>
+        <ul class="global-nav">
+          <li>
+            <a href="#">제품 구매하기</a>
+            <ul class="sub-nav">
+              <li><a href="#">올리브유</a></li>
+              <li><a href="#">발사믹식초</a></li>
+              <li><a href="#">선물세트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">레시피</a>
+          </li>
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="sub-nav">
+              <li><a href="#">회사연혁</a></li>
+              <li><a href="#">협력사</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">공지 및 뉴스</a>
+            <ul class="sub-nav">
+              <li><a href="#">뉴스 & 매거진</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="mobile_sns">
+          <a href="#"><i class="fa-brands fa-blogger"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+      </div>
+      <nav class="private-nav">
+        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+        <button class="icon_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </nav>
+      <div class="search-area">
+        <form action>
+          <div class="search-bar">
+            <input type="search" id="search-prd" placeholder="검색어를 입력해주세요" autocomplete="on">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <button class="btn_close">
+            <span>닫기</span>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </form>
+      </div>
+      <div class="badge">
+        <img src="./img/badge_01.jpg" alt="badge_01">
+        <a href="#" class="btn_badge-more">자세히보기</a>
+        <button class="btn_badge-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </header>
+    <section class="sec-hero">
+      <h2>section-hero</h2>
+      <div class="slide_wrap">
+        <ul class="slide">
+          <li class="first-slide on">
+            <img src="./img/hero_01_bg.jpg" alt="bg" />
+            <div class="slide_content">
+              <span>신제품</span>
+              <strong>프란토이오 안토나치 올리브오일</strong>
+              <span>Frantoio Antonacci</span>
+              <p>
+                올리브오일 경연대회(BIOL) 금상, 은상 수상의<br />
+                최고 품질의 유기농 올리브 오일
+              </p>
+              <a class="btn_detail" href="#">
+                <span>자세히보기</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <img src="./img/hero_01_prd.jpg.png" alt="prd" />
+            </div>
+          </li>
+          <li class="second-slide">
+            <img src="./img/hero_03_bg.jpg" alt="bg" />
+            <div class="slide_content">
+              <span>인기제품</span>
+              <strong>아체타이아 세레니 발사믹 식초</strong>
+              <span>Acetaia Sereni</span>
+              <p>
+                포브스 호텔/식음료 부문 이탈리아 100대<br />
+                명품 회사로 선정된 아체타이아 세리니사의<br />
+                고급 발사믹 식초
+              </p>
+              <a class="btn_detail" href="#">
+                <span>자세히보기</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <img src="./img/hero_03_prd.jpg.png" alt="prd" />
+            </div>
+          </li>
+          <li class="third-slide">
+            <img src="./img/hero_02_bg.jpg" alt="bg" />
+            <div class="slide_content">
+              <span>선물세트</span>
+              <strong>살루테유모 선물세트</strong>
+              <p>
+                올리브유&발사믹식초 선물세트로<br />
+                소중한 사람들에게 진심을 전하세요.
+              </p>
+              <a class="btn_detail" href="#">
+                <span>자세히보기</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <img src="./img/hero_02_prd.png" alt="prd" />
+            </div>
+          </li>
+        </ul>
+        <div class="slide_btn">
+          <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="next"><i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <ul class="slide_dots">
+          <li class="dot1">1</li>
+          <li class="dot2">2</li>
+          <li class="dot3">3</li>
+        </ul>
+      </div>
+    </section>
+    <section class="sec-prd scroll-spy">
+      <div class="wrap back-to-position">
+        <h2>이 제품은 어떠세요?</h2>
+        <a class="btn_more" href="#">
+          <span>MORE</span>
+          <i class="fa-solid fa-plus"></i>
+        </a>
+        <div class="btn_prd-list">
+          <span class="on">올리브유</span>
+          <span>발사믹식초</span>
+          <span>선물세트</span>
+        </div>
+        <ul class="prd prd_olive on">
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_oil_02.png" alt="prd_olive_01">
+            <p>
+              <span>엑스트라바이오<strong>(Extrabio)</strong> 500ml</span>
+              <strong>42,000원</strong>
+              <span>특징 : 부드러우면서도 약간 쓴맛와 매운 뒷맛</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_oil_04.png" alt="prd_olive_01">
+            <p>
+              <span>코라티나<strong>(Coratina)</strong> 500ml</span>
+              <strong>42,000원</strong>
+              <span>특징: 쌉싸름한 쓴맛 과 매운맛</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_oil_06.png" alt="prd_olive_01">
+            <p>
+              <span>페란자나<strong>(Peranzana)</strong> 500ml</span>
+              <strong>42,000원</strong>
+              <span>특징: 다양하고 풍성한 올리브향</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_oil_01.png" alt="prd_olive_01">
+            <p>
+              <span>엑스트라바이오<strong>(Extrabio)</strong> 250ml</span>
+              <strong>22,000원</strong>
+              <span>특징 : 부드러우면서도 약간 쓴맛와 매운 뒷맛</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul class="prd prd_vinegar">
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_vinegar_01.png" alt="prd_vinegar_01">
+            <p>
+              <span>미오아체토 아르젠토<strong>(Mioaceto Argento)</strong> 100ml</span>
+              <strong>78,000원</strong>
+              <span>특징: ITQI 슈페리어 테이스트 수상</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_vinegar_02.png" alt="prd_vinegar_02">
+            <p>
+              <span>아이지피 네라<strong>(I.G.P.NERA)</strong> 250ml</span>
+              <strong>35,000원</strong>
+              <span>특징: 최소 5년 숙성(오크통)</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_vinegar_03.png" alt="prd_vinegar_03">
+            <p>
+              <span>아이지피 비안카<strong>(I.G.P.BIANCA)</strong> 250ml</span>
+              <strong>52,000원</strong>
+              <span>특징: 최소 10년 숙성(오크통)</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd_vinegar_04.png" alt="prd_vinegar_04">
+            <p>
+              <span>화이트 발사믹식초<strong>(Agrodolce Bianco)</strong> 250ml</span>
+              <strong>22,000원</strong>
+              <span>특징 : 와인 식초 45% 5년 숙성</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul class="prd prd_set">
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd-set_01.png" alt="prd-set_01">
+            <p>
+              <span>선물세트 A</span>
+              <strong>98,000원</strong>
+              <span>IGP 비안카(10년산) 250ml + 엑스트라바이오 500ml</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd-set_02.png" alt="prd-set_02">
+            <p>
+              <span>선물세트 B</span>
+              <strong>81,000원</strong>
+              <span>네라(5년산) 250ml + 엑스트라바이오 500ml</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd-set_03.png" alt="prd-set_03">
+            <p>
+              <span>선물세트 C</span>
+              <strong>61,000원</strong>
+              <span>엑스트라바이오 250ml + IGP 네라/5년산 250ml</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="#"></a>
+            <img src="./img/prd-set_04.png" alt="prd-set_04">
+            <p>
+              <span>선물세트 D</span>
+              <strong>48,000원</strong>
+              <span>엑스트라바이오 250ml + 화이트 발사믹식초(5년산) 250ml</span>
+            </p>
+            <div class="btn_set">
+              <button class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="banners">
+          <a href="#"><img src="./img/banner_event_01.png" alt="banner_01"></a>
+          <a href="#"><img src="./img/banner_event_02.png" alt="banner_02"></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-recipe scroll-spy">
+      <div class="wrap back-to-position to-left">
+        <h2>맛있는 레시피</h2>
+        <div class="recipe-list_con">
+          <div class="recipe-list_wrap">
+            <ul class="recipe-list">
+              <li>
+                <a href="#"></a>
+                <div class="recipe_img">
+                  <img src="./img/recipe_01.jpg" alt="recipe_01">
+                </div>
+                <div class="recipe_txt">
+                  <div class="txt_con">
+                    <span>BY 행복한 곰돌씨 빵가게</span>
+                    <p>봉골레 파스타 살루테유모 올리브오일 추천합니다.</p>
+                    <span>자세히보기</span>
+                  </div>
+                  <div class="hash-tags">
+                    <span>#봉골레파스타</span>
+                    <span>#올리브오일</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="recipe_img">
+                  <img src="./img/recipe_02.jpg" alt="recipe_02">
+                </div>
+                <div class="recipe_txt">
+                  <div class="txt_con">
+                    <span>BY 바이줌</span>
+                    <p>이탈리아 발사믹식초 남다른 맛에 반하다. 강남 대치동 유기농 살루테 유모</p>
+                    <span>자세히보기</span>
+                  </div>
+                  <div class="hash-tags">
+                    <span>#유기농</span>
+                    <span>#발사믹식초</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="recipe_img">
+                  <img src="./img/recipe_03.jpg" alt="recipe_03">
+                </div>
+                <div class="recipe_txt">
+                  <div class="txt_con">
+                    <span>BY 로즈마리</span>
+                    <p>유기농 올리브오일로 세발나물전하면 얼마나 맛있게요?</p>
+                    <span>자세히보기</span>
+                  </div>
+                  <div class="hash-tags">
+                    <span>#세발나물전</span>
+                    <span>#향긋고소해</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="recipe_img">
+                  <img src="./img/recipe_04.jpg" alt="recipe_04">
+                </div>
+                <div class="recipe_txt">
+                  <div class="txt_con">
+                    <span>BY Ella</span>
+                    <p>살루테유모 올리브오일 발사믹식초로 만든 닭가슴살 샐러드</p>
+                    <span>자세히보기</span>
+                  </div>
+                  <div class="hash-tags">
+                    <span>#닭가슴살샐러드</span>
+                    <span>#건강식</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="recipe_img">
+                  <img src="./img/recipe_05.jpg" alt="recipe_05">
+                </div>
+                <div class="recipe_txt">
+                  <div class="txt_con">
+                    <span>BY Haiely</span>
+                    <p>유기농 발사믹 식초로 건강 샐러드 드셔보세요</p>
+                    <span>자세히보기</span>
+                  </div>
+                  <div class="hash-tags">
+                    <span>#유기농 발사믹</span>
+                    <span>#건강샐러드</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="recipe-prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="recipe-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+    <section class="sec-intro scroll-spy">
+      <div class="wrap back-to-position">
+        <h2>살루테유모 소개</h2>
+        <figure>
+          <figcaption>
+            <h3>살루테유모</h3>
+            <span>"고객의 건강(Salute)을 생각하는 기업" 입니다.</span>
+            <p>건강한 맛 + 최상의 품질 + 자연의 풍미
+              3가지를 책임지고 유통하고 있습니다.</p>
+          </figcaption>
+          <div class="intro_img">
+            <img src="./img/intro_01.jpg" alt="intro_01">
+          </div>
+        </figure>
+        <figure>
+          <div class="intro_img">
+            <img src="./img/intro_02.jpg" alt="intro_02">
+          </div>
+          <figcaption>
+            <h3>프란토이오 안토나치</h3>
+            <span>Frantoio Antonaci</span>
+            <p>유기농 올리브오일 경연대회(BIOL)에서 금상과 은상을
+              연이어 수상한 이력을 자랑하는 최고 품질의 올리브오일을
+              생산하고 있습니다.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <figcaption>
+            <h3>아체타이아 세레니</h3>
+            <span>Acetaia Sereni</span>
+            <p>포브스(Forbes)지에 의해 이탈리아 100대 명품기업으로
+              선정된 기업으로 장인 정신을 가지고 모데나산 포도
+              품종으로만 발사믹 식초를 생산하고 있습니다.</p>
+          </figcaption>
+          <div class="intro_img">
+            <img src="./img/intro_03.jpg" alt="intro_03">
+          </div>
+        </figure>
+      </div>
+    </section>
+    <section class="sec-news scroll-spy">
+      <div class="wrap back-to-position to-right">
+        <h2>살루테유모 소식</h2>
+        <a class="btn_more" href="#">
+          <span>MORE</span>
+          <i class="fa-solid fa-plus"></i>
+        </a>
+        <ul class="news-list">
+          <li>
+            <div class="news_item">
+              <span>2021.06.29</span>
+              <strong>우먼센스에 실린 살루테유모 기사</strong>
+              <div class="article-box">
+                <p>유럽 등지를 여행하며 신선하고 풀향 가득한 올리브오일과 깊은 맛이 느껴지는 발사믹 식초를 한 번 맛보고 나면 그 맛에 쭉 빠지게 된다. 유럽을 가지 않아도 현지만큼 신선하고 품질
+                  좋은
+                  올리브 오일과 발사믹 식초를 구매할 수 있는 전문점, 살루테 유모를 소개한다.</p>
+                <figure>
+                  <img src="./img/news_01.jpg" alt="news_01">
+                  <figcaption>news_01</figcaption>
+                </figure>
+              </div>
+              <a class="btn_news" href="#">자세히보기</a>
+            </div>
+          </li>
+          <li>
+            <div class="news_item">
+              <span>2021.05.24</span>
+              <strong>프란토이오 안토나치 올리브오일 판매 개시</strong>
+              <div class="article-box">
+                <p>살루테 유모에서는 2021년 5월부터 새롭게 프란토이오 안토나치(Frantoio Antonacci)社의 올리브 오일을 한국 시장에 소개하게 되었다.</p>
+                <figure>
+                  <img src="./img/news_02.jpg" alt="news_02">
+                  <figcaption>news_03</figcaption>
+                </figure>
+              </div>
+              <a class="btn_news" href="#">자세히보기</a>
+            </div>
+          </li>
+          <li>
+            <div class="news_item">
+              <span>2021.05.21</span>
+              <strong>포브스(Forbes)지 100대 명품기업에 선정된 아체타이아 세레니</strong>
+              <div class="article-box">
+                <p>세계적 경제지 포브스(Forbes) 이탈리아판이 레스토랑, 호텔, 와인&푸드 부문 2021년 100대 이탈리아 명품회사를 선정했는데</p>
+                <figure>
+                  <img src="./img/news_03.jpg" alt="news_03">
+                  <figcaption>news_02</figcaption>
+                </figure>
+              </div>
+              <a class="btn_news" href="#">자세히보기</a>
+            </div>
+          </li>
+        </ul>
+        <div class="banners">
+          <a href="#"><img src="./img/banner_intro_01.png" alt="banner_intro_01"></a>
+          <a href="#"><img src="./img/banner_intro_02.png" alt="banner_intro_02"></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="wrap">
+          <a href="#">공지사항</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용약관</a>
+          <a href="#">사업자 정보확인</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrap">
+          <div class="footer-logo">
+            <img src="./img/logo.svg" alt="logo">
+          </div>
+          <div class="footer-txt">
+            <p>
+              <span>상호 : 주식회사 살루테유모</span>
+              <span>대표 : 홍윤모</span>
+              <span>사업번호 : 899-81-01107</span>
+            </p>
+            <p>
+              <span>고객센터 : 02-575-7070</span>
+              <span>상담시간 : 월요일~토요일(10:30~20:00, *일요일 휴무)</span>
+            </p>
+            <p>
+              Copyright 2018. SALUTE YOOMO Co. ,Ltd. All rights reserved.
+            </p>
+          </div>
+          <div class="footer-sns">
+            <span>SNS</span>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+              <a href="#"><i class="fa-brands fa-blogger"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>  
+    </footer>
+    <button id="btn-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <div class="screen_pop-up">
+      <div class="like_pop-up">
+        <span>관심상품으로 등록되었습니다. <br>찜 목록으로 이동하시겠습니까?</span>
+        <div class="btns_pop-up">
+          <button class="btn_prev">계속 쇼핑하기</button>
+          <button>찜 목록 이동</button>
+        </div>
+      </div>
+      <div class="cart_pop-up">
+        <span>장바구니 안에 상품을 넣었습니다. <br>장바구니로 이동하시겠습니까?</span>
+        <div class="btns_pop-up">
+          <button class="btn_prev">계속 쇼핑하기</button>
+          <button>장바구니 이동</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

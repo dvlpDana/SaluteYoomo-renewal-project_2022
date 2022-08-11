@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Happiness-Sans-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'paybooc-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'paybooc-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marck Script', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+}
+
+:root {
+  --point-color: #336633;
+  --font-color: #373737;
+  --font-color-softly: #707070;
+  --font-color-most-softly: #a2a2a2;
+  --icon-color: #d4d4d4;
+  --heart-color: #ff4444;
+  --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  --lightgray-color: #ececec;
+}
+
+/* webkit slidebar css */
+
+::-webkit-scrollbar {
+  width: 8px;  /* 세로축 스크롤바 길이 */
+  height: 8px;  /* 가로축 스크롤바 길이 */
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(243, 238, 227, 0.8)
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #6B8F6F;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+
+
+body {
+  font-family: 'Happiness-Sans-Regular';
+  color: var(--font-color);
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  transition: .3s;
+}
+
+.mobile-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.btn_width {
+  width: 100%;
+  height: 50px;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}

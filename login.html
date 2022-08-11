@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaluteYooMo-Renual_login</title>
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" href="./css/login.css ">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- lodash 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- gsap 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"
+    integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ScrollMagic 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="./js/header.js"></script>
+  <script src="./js/login.js"></script>
+</head>
+
+<body>
+  <div class="mobile-wrap">
+    <header>
+      <div class="btn_ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1 class="logo">
+        <a href="main_index.html"><img src="./img/logo.svg" alt="logo" /></a>
+      </h1>
+      <div class="nav_bg"></div>
+      <div class="main-nav">
+        <a class="mobile_logo" href="main_index.html"><img src="./img/logo.svg" alt="logo" /></a>
+        <div class="mobile_private-nav">
+          <span><a href="login.html">로그인</a>이 필요합니다.</span>
+          <div class="mobile_icon-set">
+            <a href="login.html">
+              <i class="fa-solid fa-user"></i>
+              <span>마이페이지</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-truck"></i>
+              <span>주문조회</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span>장바구니</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-circle-question"></i>
+              <span>고객센터</span>
+            </a>
+          </div>
+        </div>
+        <ul class="global-nav">
+          <li>
+            <a href="#">제품 구매하기</a>
+            <ul class="sub-nav">
+              <li><a href="#">올리브유</a></li>
+              <li><a href="#">발사믹식초</a></li>
+              <li><a href="#">선물세트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">레시피</a>
+          </li>
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="sub-nav">
+              <li><a href="#">회사연혁</a></li>
+              <li><a href="#">협력사</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">공지 및 뉴스</a>
+            <ul class="sub-nav">
+              <li><a href="#">뉴스 & 매거진</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="mobile_sns">
+          <a href="#"><i class="fa-brands fa-blogger"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+      </div>
+      <nav class="private-nav">
+        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+        <button class="icon_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </nav>
+      <div class="search-area">
+        <div class="search-bar">
+          <input type="search" id="search-prd" placeholder="검색어를 입력해주세요">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="btn_close">
+          <span>닫기</span>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="badge">
+        <img src="./img/badge_01.jpg" alt="badge_01">
+        <a href="#" class="btn_badge-more">자세히보기</a>
+        <button class="btn_badge-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </header>
+    <section class="sec-login">
+      <div class="wrap center">
+        <h2>로그인</h2>
+        <span>로그인을 하시면 다양한 혜택을 누리실 수 있습니다.</span>
+        <div class="login_member center">
+          <ul class="btn_tab">
+            <li class="tab active"><a class="center" href="#login">로그인</a></li>
+            <li class="tab"><a class="center" href="#signup">회원가입</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="login" class="center">
+              <form action="/" method="post">
+                <div class="input-area">
+                  <div class="input-box">
+                    <input type="text" class="input_txt" id="id" placeholder="아이디" title="아이디" required
+                      autocomplete="off">
+                  </div>
+                  <div class="input-box">
+                    <input type="password" class="input_txt" id="pw" placeholder="비밀번호" title="비밀번호" minlength="8"
+                      required autocomplete="off">
+                  </div>
+                </div>
+                <div class="checkbox-area">
+                  <div class="item-checkbox">
+                    <input type="checkbox" id="chk1" class="hidden" data-check="n">
+                    <label for="chk1">자동 로그인</label>
+                  </div>
+                  <div class="item-checkbox">
+                    <input type="checkbox" id="chk2" class="hidden" data-check="n" data-checked="n">
+                    <label for="chk2">아이디 저장</label>
+                  </div>
+                </div>
+                <button type="submit" value="Sign in" class="btn_width" id="btn_login">로그인</button>
+                <ul class="login_link-box">
+                  <li><a href="#">아이디 찾기</a></li>
+                  <li><a href="#">비밀번호 찾기</a></li>
+                </ul>
+              </form>
+            </div>
+            <div id="signup" class="center">
+              <form action>
+                <div class="input-area">
+                  <div class="input-box">
+                    <input type="text" class="input_txt" id="name" placeholder="이름" title="이름" required>
+                  </div>
+                  <div class="input-box">
+                    <input type="email" class="input_txt" id="email" placeholder="이메일 주소(ex.salute@google.com)"
+                      title="이메일" required>
+                  </div>
+                  <div class="input-box">
+                    <input type="password" class="input_txt" id="new-mem_pw" placeholder="비밀번호" title="신규회원_비밀번호"
+                      minlength="8" required autocomplete="off">
+                  </div>
+                </div>
+                <button type="submit" value="Sign in" class="btn_width" id="btn_signup">회원가입</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="login_sns center">
+          <h3>SNS 로그인</h3>
+          <ul class="icons_sns">
+            <li class="center">
+              <a href="#" class="sns-login_naver"></a>
+              <img src="./img/icon_member_naver.png" alt="icon_member_naver">
+              <span>네이버</span>
+            </li>
+            <li class="center">
+              <a href="#" class="sns-login_kakao"></a>
+              <img src="./img/icon_member_kakao.png" alt="icon_member_kakao">
+              <span>카카오</span>
+            </li>
+            <li class="center">
+              <a href="#" class="sns-login_google"></a>
+              <img src="./img/icon_member_google.png" alt="icon_member_google">
+              <span>구글</span>
+            </li>
+          </ul>
+          <a href="#" class="btn_width center">비회원 주문조회</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="wrap">
+          <a href="#">공지사항</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용약관</a>
+          <a href="#">사업자 정보확인</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrap">
+          <div class="footer-logo">
+            <img src="./img/logo.svg" alt="logo">
+          </div>
+          <div class="footer-txt">
+            <p>
+              <span>상호 : 주식회사 살루테유모</span>
+              <span>대표 : 홍윤모</span>
+              <span>사업번호 : 899-81-01107</span>
+            </p>
+            <p>
+              <span>고객센터 : 02-575-7070</span>
+              <span>상담시간 : 월요일~토요일(10:30~20:00, *일요일 휴무)</span>
+            </p>
+            <p>
+              Copyright 2018. SALUTE YOOMO Co. ,Ltd. All rights reserved.
+            </p>
+          </div>
+          <div class="footer-sns">
+            <span>SNS</span>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+              <a href="#"><i class="fa-brands fa-blogger"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="btn-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+</body>
+
+</html>
